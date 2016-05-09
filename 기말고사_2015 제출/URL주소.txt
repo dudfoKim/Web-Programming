@@ -1,0 +1,6 @@
+[문제2 URL]
+http://119.81.246.131:8080/wp/main.jsp
+
+
+[문제3 URL]
+http://119.81.246.131:8080/wp/f3/soccer.html

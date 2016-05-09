@@ -1,0 +1,50 @@
+h1 {
+	text-align:center;
+}
+
+h2 {
+	background-color:blue;
+	display:inline-block;
+	color:white;
+	
+}
+
+img {
+	float:left;
+}
+
+span {
+	font-size:25pt;
+	font-family:Arial, sans-serif;
+	font-weight:bold;
+}
+
+table, th
+{
+	border-collapse:collapse;
+	border: 1px solid black;
+	text-align:center;
+}
+
+td {
+	border-collapse:collapse;
+	border: 1px solid black;
+	text-align:left;
+}
+
+#contents {
+float:right;
+width:20%;
+}
+
+#main
+{
+	float:left;
+	width:80%;
+}
+
+#side
+{
+	position:fixed;
+	border: 1px solid black;
+}

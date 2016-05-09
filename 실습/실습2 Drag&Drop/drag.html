@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	
+	<link type="text/css" rel="stylesheet" href="./drag.css"/>
+	<script type="text/javascript" src="./drag.js"></script>
+
+	<title>
+		Drag&Drop
+	</title>
+</head>
+
+<body>
+
+	<p><h1>HTML API실습</h1></p>
+	
+	<p>
+		<img id="pen" src="./new.jpg" height="75px" width="75px" draggable="true" ondragstart="drag(event)"/>
+		<img id="trash" src="./trash.png" height="75px" width="75px" ondrop="drop(event)" ondragover="allowDrop(event)"/>
+	</p>
+
+	<div id="tableDiv">
+		<table id="timetable">
+			<tr>
+				<td id="a" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+				<td id="b" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+			</tr>
+			<tr>
+				<td id="c" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+				<td id="d" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+			</tr>
+		</table>
+	</div>	
+
+</body>
+</html>

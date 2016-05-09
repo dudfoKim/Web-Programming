@@ -1,0 +1,40 @@
+body 
+{
+	background-image : url(./background.jpeg);
+	background-repeat : repeat;
+}
+/* body의 배경을 정의한다. */
+
+#map
+{
+	position : absolute;
+}
+/* 게임을 진행하는 div의 위치를 정의한다. */
+
+#boards
+{
+	line-height : 30px;
+}
+/* 값을 나타내는 span 간의 간격을 정의한다. */ 
+
+.board
+{
+	display : block;
+	background-color : #F2FFED;
+	border : 1px solid green;
+	width : 175px;
+	font-style : italic;
+}
+/* 값을 실제로 나타내는 span의 속성을 정의하다. */
+
+span 
+{
+	color : #1A7913;
+}
+/* span의 글자 색깔을 바꾼다. */
+
+.inputs
+{
+	position : inherit;
+}
+/* 수치를 나타내는 모든 input 태그는 부모 태그인 span(class 이름 board)을 상속받는다. */

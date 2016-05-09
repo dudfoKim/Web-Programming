@@ -1,0 +1,71 @@
+#top
+{
+	text-align : center;
+}
+
+#title
+{
+	font-size : 30px;
+	color : #050099;
+}
+
+#insert
+{
+	display : inline;
+}
+
+.imageButton
+{
+	display : inline;
+}
+
+#colorValue
+{
+	height : 30px;
+	width : 75px;
+}
+
+#here
+{
+	position : absolute;
+	top : 200px;
+	left : 300px;
+}
+
+table, th, td
+{
+	border-collapse : collapse;
+	border : 1px solid black;
+	text-align : center;
+}
+
+#tableDiv
+{
+	position : relative;
+	top : 50px;
+}
+
+#timetable
+{
+	margin : auto;
+	width : 800px;
+	height : 500px;
+}
+
+#timetable th
+{
+	background-color : #6CC0FF;
+	border : 1px solid purple;
+}
+
+#timetable td
+{
+	width : 135px;
+	height : 65px;
+	padding : 0px;
+}
+
+#timetable td:nth-child(1)
+{
+	width : 75px;
+}

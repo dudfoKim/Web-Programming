@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link type='text/css' rel='stylesheet' href="imageGallaryCSS.css">
+	<script type='text/javascript' src="imageGallaryScript.js"></script>
+</head>
+<body>
+
+<!-- header 영역-->
+	<header id = "header">
+		<h1 id = "h_Font">김영래의 블로그</h1>
+	</header>
+	
+<!-- galleryMenu 영역 -->
+	<nav onmouseover="appear()" onmouseout="disappear()" id="middleBar">
+	
+		<h2>Menu</h2>
+	
+		<div id ="dropdown">
+			<a id = "add_thing" onclick = "add_thing()"><div>추가</div></a>
+			<a id = "center" onclick = "center()"><div>가운데 정렬</div></a>
+			<a id = "inline" onclick = "one_line()"><div>한 줄 보기</div></a>
+		</div>
+	</nav>
+
+	<!-- Side Bar와 Content 감싸는 wrapper -->
+	<div id = "contentWrapper">
+	
+		<!-- Side Bar -->
+		<nav id = "sideBar">
+		
+		</nav>
+	
+		<!-- Content 글이나 이미지 들어가는 부분-->
+		<section id = "content">
+			<div id="contents">
+			</div>
+		</section>
+	</div>
+	
+</body>
+</html>

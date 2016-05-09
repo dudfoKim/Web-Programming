@@ -1,0 +1,60 @@
+body{
+	background-color : #22655E;
+	width : 100%;
+}
+
+#header{
+	background-color : #1E6912;
+	height : 100px;
+	padding-left : 20px;
+	padding-top : 20px;
+	color : #9CF1EC;
+	font-family:Impact;
+	border : solid 2px white;
+}
+
+#middleBar
+{
+	width:100%;
+	margin-top : 10px;
+	border : 5px;
+	border : solid 2px white;
+	height : 50px;
+	border-radius : 5px;
+	color : white;
+	text-align : center;
+	background-color: #39872D;
+}
+
+#contentWrapper{
+	margin-top : 10px;
+}
+
+#sideBar{
+	background-color : #1E6912;
+	float:left;
+	width : 20%;
+	color : white;
+	border : solid 2px white;
+	min-height : 600px;
+	height : 100%;
+	border-radius : 5px;
+}
+
+#content{
+	float : right;
+	width : 78%;
+	text-align : center;
+	color : white;
+	border : solid 2px white;
+	min-height : 800px;
+	border-radius : 5px;
+	min-height : 600px;
+	height : 100%;
+}
+
+
+
+
+
+

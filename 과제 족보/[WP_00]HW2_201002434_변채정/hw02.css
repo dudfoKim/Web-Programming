@@ -1,0 +1,12 @@
+#header {
+    position: relative;
+    top: -10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+	height: 40px;
+}
+
+#inputs {
+	width: 200px;
+	clear: both;
+}

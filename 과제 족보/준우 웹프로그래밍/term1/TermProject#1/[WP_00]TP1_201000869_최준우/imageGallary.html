@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link type='text/css' rel='stylesheet' href="imageGallaryCSS.css">
+	<script type='text/javascript' src="imageGallaryScript.js"></script>
+</head>
+<body>
+
+<!-- header 영역-->
+	<div id="header">
+		<br/>
+		<h1><a href="imageGallary.html">Web Gallery</a></h1>
+	</div>
+<!-- galleryMenu 영역 -->
+	<div id="galleryMenu" onmouseover=onMain() onmouseout=outMain()>
+		<div id="onGallery" align="center">Gallery Menu</div>
+		<div id="mainMenu" align="center">
+			<table>
+				<tr>
+					<td><a href="#" onclick=addImg()>추가</a></td>
+					<td><a href="#" onclick=alignCenter()>가운데 정렬</a></td>
+					<td><a href="#" onclick=alignLine()>한줄보기</a></td>
+				</tr>
+			</table>
+		</div>
+			
+	</div>
+	<div id="wrapper">
+	<!-- sideBar 영역 -->
+	<div id="sideBar">	
+		<br/>
+		<div id="side" align="center">
+			<img src="resources\img\CAM00097.jpg" width=200 height=200/>
+			<p>Web Programming</p>
+			<p>분반 : 00분반</p>
+			<p>학번 : 201000869</p>
+			<p>이름 : 최준우</p>
+			<p><b>★방명록★</b></p>
+			<div id="dynamicList">
+				<ul id="List" onclick=removeList()>
+					
+				</ul>
+				
+				<button onclick=addList()>리스트 추가</button>
+			</div>
+			
+		</div>
+		<iframe src="http://www.w3schools.com/" frameborder="1" scorlling="auto" width=350 height=200></iframe>
+	</div>
+<!-- contents 영역 -->
+	<div id="contents">
+		<div id="imgTable">
+		</div>
+	</div>
+	</div>
+	<div id="inputContents">
+		
+		<table>
+			<tr>
+				<td>제목 : <input id="imgName" type="text"/></td>
+			</tr>
+			<tr>
+				<td id="imgTD"><img src="" id="img"/><br/>
+			     <input type="file" id="imgFile" onchange=imgPreview()></input></td>
+			</tr>
+			<tr>
+				<td id="buttons"><input type="button" id="resisBut" value="등록" onclick=imgUpload()>
+				<input type="button" id="removeBut" value="삭제" onclick=imgRemove()>
+				<input type="button" id="closeBut" value="닫기" onclick=closeInput()></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

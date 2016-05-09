@@ -1,0 +1,4 @@
+@CHARSET "EUC-KR";
+
+#result{display:none; border: 1px solid black; margin: auto; width: 350px;}
+#result td{min-width: 80px; text-align: center;}

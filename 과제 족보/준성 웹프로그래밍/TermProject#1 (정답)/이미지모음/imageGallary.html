@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Term1</title>
+	<link type='text/css' rel='stylesheet' href="imageGallaryCSS.css">
+	<script type='text/javascript' src="imageGallaryScript_navDom.js"></script>
+</head>
+<body>
+<!--writingFrom 영역-->
+	<nav id="newContent">
+		<div id="wrapperHead">
+			제목 : <input id="wrapperSubject" style="width:330px" type="text"><br>
+		</div>
+		<div id="wrapperImage">
+			<img id="image" src="" alt="">
+			<input id="inputImage" type="file" onchange="fileSelected()"/>
+		</div>
+		<div id="footerOfNewContent">
+			<input id="submitButton" type="button" value="등록" onclick="submit()"/>
+			<input id="deleteButton" type="button" value="삭제" onclick="deleteContents()"/>
+			<input type="button" value="닫기" onclick="closeContents()"/>
+		</div>		
+	</nav>
+	
+<!-- header 영역-->
+	<div id="header">
+		<h1 id="headerFont">Term Project#1 - Image Gallery</h1>
+	</div>
+<!-- galleryMenu 영역 -->
+	<div id="galleryMenu" onmouseover = "showMenu()" onmouseout = "hideMenu()">
+	GalleryMenu
+	</div>
+	<div id="hiddenMenu" onmouseover = "showMenu()" onmouseout = "hideMenu()">
+			<div id = "addition" onclick="openContents()"><p class="menuFont">추가</p></div>
+			<div id = "centerContents" onclick="centerAlign()"><p class="menuFont">가운데 정렬</p></div>
+	</div>		
+	<div id="wrapper">
+	<!-- sideBar 영역 -->
+		<div id="sideBar">		
+	
+		</div>
+<!-- contents 영역 -->
+		<div id="contents">	
+			<div id="collectionOfPost">
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>

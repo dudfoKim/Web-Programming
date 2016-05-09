@@ -1,0 +1,45 @@
+table {
+	border-collapse : collapse;
+	border : 1px solid;
+	width : 800px;
+	height : 500px;
+		font-size:15px;
+		margin-left:20%;
+}
+#month{
+	width : 60px;
+	height : 20px;
+background-color:yellow;
+border : 1px solid;
+	text-align : center;
+margin-left:50%;
+}
+
+#day{
+	height : 20px;
+background-color:#9FC93C;
+		text-align : center;
+}
+#sat{
+color:blue;
+}
+
+#sun{
+color:red;
+}
+
+#list{
+width:100px;
+height : 20px;
+}
+
+
+#Xbox{
+width:10px;
+height : 10px;
+background-color:yellow;
+border : 1px solid;
+display:none;
+margin-top:-10px;
+cursor:pointer;
+}

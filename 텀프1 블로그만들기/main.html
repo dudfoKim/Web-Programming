@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<!-- 외부 css 및 자바스크립트 파일 참조 -->
+  <link type = "text/css" rel = "stylesheet" href = "./main.css"/>
+  <script type = "text/javascript" src = "./main.js"> </script>
+
+<head>
+   <meta charset = "utf-8"/>
+
+   <!-- 텀프 1 -->
+   <title>Term Project #1
+   </title>
+</head>
+
+<body> 
+	<header id = "header">
+		<h1 id = "h_Font"> 김영래의 블로그 </h1>
+	</header>
+   
+	<!-- Middle Bar -->
+	<nav id = "middleBar" onmouseover="showMenu()" onmouseout="hiddenMenu()">
+		<p id = "menu">메뉴</p>
+		<div  id ="dropdown">
+			<div id = "addSomething" onclick = "addSomething()">게시물 추가</div>
+			<div id = "addByIndex" onclick = "index()">Index로 게시물 추가</div>
+		</div>
+	</nav>
+
+	<!-- Side Bar와 Content 감싸는 wrapper -->
+	<div id = "contentWrapper">
+
+		<!-- Side Bar -->
+		<nav id = "sideBar">
+			<ul id = "myList">
+			</ul>
+		</nav>
+   
+		<!-- Content 글이나 이미지 들어가는 부분 -->
+		<section id = "content">
+		</section>
+	</div>
+
+	<!-- 추가하는 창 -->
+	<div id = "addWindow">
+		<div>
+			<p> 게시글 제목 : <input type = "text" id = "imageTitle" style = "width : 125px"></p>
+		</div>
+		<div>
+			<textarea rows = "10" cols = "30" id = "description"></textarea>
+			<img src="" id = "showImage" style = "display : none"></img>
+		</div>
+		<div>
+			<input type = "file" size = "10" id = "attachImage" onchange = "attachImage()" multiple></input>
+		</div>
+		<div>
+			<input type = "button" value = "등록" id = "subButton" onclick = "submit()"/>
+			<input type = "button" value = "닫기" onclick = "closeWindow()" />
+		</div>
+	</div>
+	
+</body>
+</html>

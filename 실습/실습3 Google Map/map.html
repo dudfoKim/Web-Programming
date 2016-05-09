@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	
+	<link type="text/css" rel="stylesheet" href="./map.css"/>
+	
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script type="text/javascript" src="./map.js"></script>
+	
+	<title>
+		Tour Guirde
+	</title>
+</head>
+
+<body>
+
+	<div id="left">
+		<p>
+			<h1>여행지 입력</h1>
+		</p>
+		<p>
+			위도 : <input type="text" id="latitude" size="10" placeholder="위도"><br>
+			경도 : <input type="text" id="longitude" size="10" placeholder="경도"><br>
+			Zoom : <input type="number" id="zoom" min="1" max="15" value="8">
+		</p>
+		<p>
+			여행지 설명<br>
+			<textarea cols="42" rows="5" id="content">
+			</textarea>
+			<br><input type="button" value="제출" id="content" onclick="initialize()">
+		</p>
+	</div>
+	
+	<div id="right">
+	</div>
+
+</html>

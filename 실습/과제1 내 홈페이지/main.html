@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<!-- 모든 주석과 소스 코드는 영어로 작성했습니다. -->
+
+<html>
+
+<!--External StyleSheet -->
+<link type="text/css" rel="stylesheet" href="main.css"/>
+
+<head>
+	<meta charset="UTF-8">
+	
+	<!-- HomePage Title -->
+	<title>
+		My homepage
+	</title>
+</head>
+
+<body>
+	<!-- Background Music -->
+	<embed src="에릭남-05-LOVE SONG.mp3" hidden="true">
+	
+	<!-- Header -->
+	<header>
+		Welcome to my HomePage
+	</header>
+
+	<!-- Menu -->
+	<nav id="menu">
+        <ul>
+			<!-- Current Page Hyperlink-->
+			<li>
+				<a class="list" href="main.html">My Profile</a>
+			</li>
+			<!-- Frame Hyperlink -->			
+			<li>
+				<a class="list" href="http://portal.cnu.ac.kr/" target="forLink">CNU PORTAL Site</a>
+			</li>			
+			<!-- New Window open Hyperlink-->
+            <li>
+			<a class="list" href="#" onClick="window.open('http://www.cnu.ac.kr','CNU Site','width=가로,height=세로');return false">CNU Site</a>
+			</li>
+			<!-- Frame Hyperlink -->			
+            <li>
+				<a class="list" href="http://computer.cnu.ac.kr/icons/app/cms/front.php" target="forLink">CNU CSE Site</a>
+			</li>
+			<!-- New tab Hyperlink-->
+            <li>
+				<a class="list" href="http://dorm.cnu.ac.kr/html/kr/" target=_blank">CNU Dormitory Site</a>
+			</li>
+        </ul>
+	</nav>
+
+	<!-- Using iFrame-->
+	<iframe id="content" name="forLink" src="content.html" width="995px" height="800px" scrolling="no" frameborder="0">
+	</iframe>
+
+	<!-- Footer -->	
+	<footer>
+		copyright © kim Yeong-Lae<br>kimyl105.cnu.ac.kr
+	</footer>
+
+</body>
+</html>

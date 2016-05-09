@@ -1,0 +1,30 @@
+
+*
+{
+	text-align:center;
+}
+
+#dynamicList
+{
+	float:auto;
+	width:25%;
+	margin:auto;
+}
+
+a{
+	text-decoration:none;
+}
+
+
+h1{
+	font-size:50px;
+	text-align:center;
+}
+
+li{
+	text-align:left;
+}
+
+li:hover{
+	color:red;
+	}

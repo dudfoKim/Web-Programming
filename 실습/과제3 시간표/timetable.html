@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+
+	<link type="text/css" rel="stylesheet" href="./timetable.css"/>
+	<script type="text/javascript" src="./timetable.js"></script>
+
+	<title>
+		my TimeTable
+	</title>
+</head>
+
+<body>
+
+	<div id="top">
+		<p id="title">웹프로그래밍 HW3</p>
+		<p id="insert">Favorite Color :</p>
+		<input id="colorValue" type="color" value="#E8FFFF"/>
+		<p class="imageButton"><img src="./new.jpg" draggable="false" height="100px" width="125px" onclick="add()"/></p>
+		<p class="imageButton"><img src="./reload.png" draggable="false" height="100px" width="125px" onclick="getStorage()"/></p>
+		<p class="imageButton"><img src="./trash.png" draggable="false" id="trash" height="100px" width="125px" ondrop="drop(event)" ondragover="allowDrop(event)"/></p>
+		<!-- Local Storage 초기화를 위한 이미지를 새로 추가 !-->
+		<p class="imageButton"><img src="./clear.jpg" draggable="false" height="100px" width="125px" onclick="clearStorage()"/></p>
+	</div>
+	
+	<div id="here">
+	</div>
+
+	<div id="tableDiv">
+		<table id="timetable">
+			<caption>[1학기 시간표]</caption>
+			<thead>
+				<tr>
+					<th>시간</th>
+					<th>월</th>
+					<th>화</th>
+					<th>수</th>
+					<th>목</th>
+					<th>금</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						10:00
+					</td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+				</tr>
+				<tr>
+					<td>
+						11:00
+					</td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+				</tr>
+				<tr>
+					<td>
+						12:00
+					</td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+				</tr>
+				<tr>
+					<td>
+						13:00
+					</td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+				</tr>
+				<tr>
+					<td>
+						14:00
+					</td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+				</tr>
+				<tr>
+					<td>
+						15:00
+					</td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+				</tr>
+				<tr>
+					<td>
+						16:00
+					</td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+				</tr>
+				<tr>
+					<td>
+						17:00
+					</td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+				</tr>
+				<tr>
+					<td>
+						18:00
+					</td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+				</tr>
+				<tr>
+					<td>
+						19:00
+					</td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+					<td ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+				</tr>
+		</table>
+	</div>	
+
+</body>
+</html>

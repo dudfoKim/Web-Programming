@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>insertMenu</title>
+<script >
+function insertMenu(){
+
+		var text = prompt("추가하실 메뉴의 번호와 이름를 입력하시오");	
+		text = text.replace(/(^\s*)|(\s*$)/gi, "");				//공백 문자열 제거
+
+		if(text === ""){
+			alert("값을 입력 하시오");
+			insertMenu();
+		}
+		else if(text === null){
+		}
+		else{
+				var li = document.createElement("li");			//li생성
+				var textNode = document.createTextNode(text);	//TextNode를 만든 후 
+				li.appendChild(textNode);						//li에 넣어 줌 
+				li.setAttribute("class","item");				//setAttribute를 이용하여 item이라는 이름을 가진 class를 추가 해 줌
+
+				var layout = document.getElementById("layout");	//li의 상위 노드 인 ul을 받아옴.(layout은 ul의 id)
+				layout.appendChild(li);							//받아온 ul에 li를 추가
+
+				li.onclick = function(){						//click 이벤트를 발생시킬 경우  
+				deleteItem(this);								//delete함수가 실행되도록 함. 함수를 호출 할 때 현재 객체를 this를 통해 넘겨 줌
+		}
+	}
+}
+
+function deleteItem(li){										
+	var tfMessage = confirm("삭제하시겠습니까 ?");				//확인창
+	if(tfMessage === true){										//True일 경우 삭제
+		li.remove();
+	}
+}
+</script>
+
+<style>
+#alignDiv{
+	text-align:center;
+	width:100px;
+	border: 1px solid black;
+	display:inline-block;
+}
+.item {
+	font-size:20px;
+	font-family: "Times New Roman", Times, serif;
+}
+.item:hover{
+	color:red;
+}
+
+
+</style>
+</head>
+<body>
+<h2>발도장</h2>
+<ul id="layout">
+</ul>
+<input type="button" onClick="insertMenu()" value="발도장 추가"/>
+</body>
+</html>

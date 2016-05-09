@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset = "utf-8"/>
+	<link type = "text/css" rel = "stylesheet" href = "TP01.css"/>
+	<script type="text/javascript" src = "TP01.js"></script>
+	<title> Term Project #1 </title>
+</head>
+
+<body>
+	<!-- 전체 감싸는 wrapper -->
+	<div id = "wrapper">
+		<!-- Header -->
+		<header id = "header">
+			<h1 id = "h_Font"> </h1>
+		</header>
+	
+		<!-- Middle Bar -->
+		<nav id = "middleBar" onmouseover = "showMenu()" onmouseout = "hideMenu()">
+			<p> Middle Bar </p>
+		</nav>
+		
+		<nav id="hiddenMenu" onmouseover = "showMenu()" onmouseout = "hideMenu()">
+			<div id = "addition" onclick="openContents()"><p class="menuFont">추가</p></div>
+			<div id = "indexAddition" onclick="insertNode()"><p class="menuFont">Index 지정 추가</p></div>
+			
+		</nav>		
+		
+		
+		
+	
+		<!-- Side Bar와 Content 감싸는 wrapper -->
+		<div id = "contentWrapper">
+		
+			<!-- Side Bar -->
+			<aside id = "sideBar">
+				<ul id = "sideBarUl">
+				</ul>
+			</aside>
+		
+			<!-- Content 글이나 이미지 들어가는 부분-->
+			<article id = "content">
+				
+			</article>
+		</div>
+	
+	</div>
+	
+	
+	<div id = "hiddenContent">
+		<div id = "hiddenHeader">
+			제목  <input type = "text" id="hiddenTitle" style = "width:330px"><br>
+		</div>
+		
+		<div id = "hiddenSection">
+			<textarea id = "hiddenTextArea" rows ="10" cols = "50"></textarea>
+		</div>
+		<div id="hiddenImage">
+			<input id = "inputImage" type = "file" multiple />
+		</div>
+		<div id="hiddenFooter">
+			<input id = "submitButton" class = "hiddenButton" type = "button" value = "등록" onclick = "submit()"/>
+			<input type = "button" class = "hiddenButton" value = "닫기" onclick = "closeContents()"/>
+		</div>		
+	</div>
+	
+	
+</body>
+
+</html>

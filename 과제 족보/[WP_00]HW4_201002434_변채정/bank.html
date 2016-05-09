@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>bank</title>
+</head>
+<body>
+	<form action="accountNumber.jsp" method="post">
+			계좌번호 : <input type = "text" name = "accountNum" pattern="\d{3}-\d{2}-\d{4}$" placeholder="계좌번호) ddd-dd-dddd"><br>
+			<br>P W : <input type="password" name="password"><br>
+	
+			<input type="submit" value="계좌개설" name="make">
+			<input type="submit" value="로그인" name="login" formaction="login.jsp">
+		</form>
+
+</body>
+</html>

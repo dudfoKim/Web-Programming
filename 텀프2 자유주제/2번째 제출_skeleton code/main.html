@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+		<!-- 필요한 외부 파일을 참조한다. !-->
+		<link type="text/css" rel="stylesheet" href="./main.css"/>
+		<script type="text/javascript" src="./main.js"></script>
+
+		<title>
+			메인 페이지
+		</title>
+	</head>
+
+	<!-- 메인 페이지를 불러올 때 getCurrentTime 메소드를 호출한다. !-->
+	<body onload="getCurrentTime()"> 
+		<header>
+			과일을 먹고 커져보자!
+		</header>
+	
+		<!-- 메인 홈페이지의 여러 메뉴에 대해 구현 !-->
+		<nav>
+        <ul>
+			<!-- 게임을 실행한 총 게임횟수를 표시 !-->
+			<li class="content">
+				<h3 class="title">총 게임횟수 :</h3>
+				<p id="guestCount"></p><br>
+				<!-- 이 링크를 누르면 게임 페이지로 넘어간다. !-->
+				<a href="./movingGame.html" target="_blank" id="list">
+					<b><i><u>게임하러 가기</u></i></b>
+				</a>&nbsp;(클릭!)<br>
+				<!-- 현재 시간을 표시한다. !-->
+				<h3 class="title">현재 시간 </h3>
+				<p id="currentTime">
+				</p>
+			</li>
+			<!-- Google Map과 GeoLocation을 이용 !-->
+			<li class="content">
+				<h3 class="title">사용자의 위치</h3>
+				<p id="here">
+				</p>
+			</li>
+			<!-- 개발자 정보를 표시한다. !-->
+			<li class="content">
+				<h3 class="title">개발자 소개</h3>
+				<p id="me">
+					소속 : 충남대학교 공과대학<br>
+					누구 : 컴퓨터공학과 3학년<br>
+					목적 : 웹프로그래밍 텀프로젝트<br>
+					<a id="mail" href="mailto:kimyl609@hanmail.net">
+						메일 : kimyl609@hanmail.net
+					</a>
+				</p>
+			</li>
+        </ul>
+		</nav>
+
+		<!-- copyright !-->
+		<footer>
+			copyright © kim Yeong-Lae<br>Kimyl609@hanmail.net
+		</footer>
+	</body>
+	
+</html>

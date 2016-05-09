@@ -1,0 +1,46 @@
+body {
+	background-color : #FAFAD2;
+}
+body h1{
+	color : #FF8C00;
+	text-align : center;
+}
+
+body img{
+	height : 100px;
+	width : 100px;
+}
+body div{
+	text-align : center;
+}
+
+body #cart{
+	background-color : #F0E68C;
+	padding : 10px;
+}
+
+body #delivery{
+	background-color : #EEE8AA;
+	padding : 10px;
+	margin-top : 25px;
+	margin-bottom : 50px;
+}
+
+body #booklist{
+	text-align : center;
+	margin-left : auto;
+	margin-right : auto;
+	padding : 10px;
+}
+
+body #booklist td{
+	padding : 15px;
+}
+
+body #booklist th{
+	padding : 10px;
+	border-bottom : 1px solid black;
+	font-size : 20px;
+	font-weight : black;
+	
+}

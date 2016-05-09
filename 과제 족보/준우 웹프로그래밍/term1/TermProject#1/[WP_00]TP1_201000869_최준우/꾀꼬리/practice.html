@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<title> </title>
+</head>
+	
+<body>
+	<form oninput="score.value=parseInt(x.value)">
+		이름 <input type="text" placeholder="이름을 입력하시오." autofocus required><br/>
+		전화번호 <input type="text" pattern="[0-9]{2,3}-[0-9]{3}-[0-9]{4}" placeholder="전화번호를 입력하시오."><br/>
+		이메일 <input type="email" autocomplete="off" placeholder="이메일을 입력하시오."required><br/>
+		생년원일 <input type="date" required><br/>
+		대학 졸업 년도 <input type="number" min="1990" max="2014"><br/>
+		토익 점수 <input type="range" name="x" min="0" max="990"><output name="score" for="x"></output><br/>
+		좋아하는 과목 <input list="subject" placeholder="좋아하는 과목을 입력하시오"><br/>
+		<datalist id="subject">
+			<option value="국어">
+			<option value="수학">
+			<option value="영어">
+			<option value="사회">
+			<option value="과학">
+		</datalist>
+		자기 소개서 및 증명 서류 첨부 <input type="file" multiple ><br/>
+		<button type="submit" action="http://cse.cnu.ac.kr/jobApp.jsp">입사 서류 제출</button><br/>
+		<button type="submit" formaction="http://cse.cnu.ac.kr/temp_save.jsp">임시 저장</button>
+	</form>
+</body>
+
+</html>

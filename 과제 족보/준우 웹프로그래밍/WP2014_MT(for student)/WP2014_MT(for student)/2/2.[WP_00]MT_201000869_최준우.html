@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<title> 2014 웹 프로그래밍 중간고사 2번 문제</title>
+		<script type='text/javascript' src="2.[WP_00]MT_201000869_최준우.js"></script>
+	</head>
+	<body>
+		<h1> DBLAB 헬스장 신규 회원 등록</h1>
+
+		<p> DBLAB 헬스장에 오신 것을 환영합니다. <br> 더 이상 앞에 가는 다른 남자의 초콜릿 복근과 다른 여자의 탄탄한 허벅지가 부럽지 않습니다. <br>
+		모든 환경은 준비되어 있습니다. <br></p>
+		
+			이름 : <br>
+			<input type="text" id="name" onkeypress="enter_name(event,this.value)"></input><br><br>
+			
+			출생년도 : <br>
+			<input type="number" id="birth" onkeypress="enter_birth(event,this.value)"></input> (예: 1997년도에 태어났으면, 1997을 입력)<br><br>
+			
+			키 : <br>
+			<input type="text" id="height" onkeypress="enter_height(event,this.value)"></input><br><br>
+
+			몸무게 : <br>
+			<input type="text" id="weight" onkeypress="enter_weight(event,this.value)"></input> 비만도는 <output name="x" id="obesity" for="a b">***</output>입니다.<br><br>
+			
+			이용 시간대 (2개만 선택)<br>
+			
+			<input type="checkbox" id="morning" value="morning"></input> 오전 7시 ~ 12시
+			<input type="checkbox" id="noon" value="noon"></input> 오후12시~6시
+			<input type="checkbox" id="evening" value="evening"></input> 오후6시 ~ 12시 <br>
+			<br>
+			
+
+			<button onclick="check_time()">확인 </button>		
+	<body>
+</html>

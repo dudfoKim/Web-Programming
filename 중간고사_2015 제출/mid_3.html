@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset = "utf-8"/>
+	<script type = "text/javascript" src = "./mid_3.js"></script>
+
+	<title> DOM Tree </title>
+   
+</head>
+
+<body>
+
+<div>
+	<p>추가할 글을 입력하세요.<br>
+		<input type="text" id="addContent">
+		<input type="button" value="추가" onclick="add()">
+	</p>
+	<p>삭제할 글의 번호를 입력하세요.<br>
+		<input type="text" id="deleteIndex">
+		<input type="button" value="삭제" onclick="deleteByIndex()">
+	</p>
+	<p>수정할 글의 번호와 글을 입력하세요.<br>
+		<input type="text" id="replaceIndex">
+		<input type="text" id="replaceContent">
+		<input type="button" value="수정" onclick="replaceList()">
+	</p>
+	<p>링크로 연결할 글의 번호와 링크 주소를 입력하세요.<br>
+		<input type="text" id="linkIndex">
+		<input type="text" id="linkAddress">
+		<input type="button" value="링크 연결" onclick="linkList()">
+	</p>
+</div>
+
+	<div id = "listMenu">
+		<ol id="list">
+		</ol>
+	</div>
+
+	
+</body>
+</html>

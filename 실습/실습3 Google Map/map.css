@@ -1,0 +1,15 @@
+#left
+{
+	float : left;
+	border : 1px solid black;
+	width : 400px;
+	height : 400px;
+}
+
+#right
+{
+	border : 1px solid black;
+	width : 700px;
+	height : 800px;
+	display : inline-block;
+}

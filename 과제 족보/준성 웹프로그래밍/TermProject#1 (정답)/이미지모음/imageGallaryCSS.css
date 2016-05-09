@@ -1,0 +1,183 @@
+html{
+	height:100%;
+	margin:0;
+}
+body 
+{
+	width:100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: "Times New Roman", Times, serif;
+	background-color:#B2CCFF;
+}
+#header{
+	width:100%;
+	height:20%;
+	background-color:#669999;
+}
+#galleryMenu{
+	font-size:28px;
+	width:100%;
+	height:5%;
+	text-align:center;
+	background-color:#94B8B8;
+}
+#wrapper{
+	position:absolute;
+	width:100%;
+	height:75%;
+	max-height:9999px;
+}
+#sideBar{
+	width:20%;
+	min-height:1000px;
+	max-height:9999px;
+	float:left;
+	background-color:#949494;
+}
+#contents{	
+	width:80%;
+	min-height:100%;
+	max-height:9999px;
+	float:right;
+}
+#headerFont{
+	position:absolute;
+	font-size:3em;
+	margin:3% 0 0 25%;
+	text-align:center;
+}
+.menuFont{
+	font-size:20px;
+	font-weight:bold;
+	margin-top:3px;
+	color:white;
+}
+/*drop down menu*/
+#hiddenMenu{
+	position:absolute;
+	background-color:grey;
+	display:none;
+	width:100%;
+	height:35px;
+	z-index:10;
+}
+
+#addition{
+	text-align:center;	
+	width:20%;
+	background-color:#484848;
+	height:35px;
+	display:inline-block;
+}
+
+#centerContents{
+	text-align:center;
+	width:20%;
+	background-color:#484848;
+	height:35px;
+	display:inline-block;
+}
+
+#inRow{
+	text-align:center;
+	width:20%;
+	background-color:#484848;
+	height:35px;
+	display:inline-block;
+}
+/*drop down menu*/
+
+
+/*			추가			*/
+
+
+#newContent{
+	position :absolute;
+	display:none;
+	width:411px;
+	height:480px;
+	background-color:#cbe1e7;
+	text-align:center;
+	margin-top: 100px;
+	margin-left:500px;
+	z-index:100;
+}
+#wrapperMain{
+	position:absolute;
+	margin-top: 535px;
+	margin-left:500px;
+	width:410px;
+	height:500px;	
+}
+#registration{
+	background-color:#4A6E6E;
+	position:relative;
+	display:inline-block;
+	font-size:18px;
+	text-align:center;
+	width:100%;
+	height:30px;
+	border:1px solid grey;
+}
+#subRegistration{
+	margin-top:3px;
+	margin-left:13px;
+	display:inline-block;
+}
+#addConButton{
+	float:right;
+}
+
+#collectionOfPost{
+	width:410px;
+	margin-left:50px;
+	margin: 50px 0px 0px 50px;
+}
+.contents{
+	position:relative;
+	display:inline-block;
+	border:1px solid grey;
+	width:133px;
+	height:173px;
+	text-align:center;
+}
+
+.contentsImage{
+	margin-top:0px;
+	width:130px;
+	height:130px;
+}
+
+#wrapperImage{
+text-align:center;
+height:420px;
+width:410px;
+border: 1px solid grey;
+}
+#image{
+height:380px;
+width:380px;
+}
+
+#inputImage{
+	margin-left:10px;
+	float:left;
+}
+
+#footerOfNewContent{
+	height:25px;
+	width:410px;
+	text-align:right;
+	border: 1px solid grey;
+}
+
+#wrapperHead{
+	width:410px;
+	height:30px;
+	border: 1px solid grey;	
+}
+p{
+margin:0px;
+}

@@ -1,0 +1,43 @@
+#title
+{
+	text-align: center;
+}
+
+.subTitle
+{
+	color: white;
+	background-color: blue;
+}
+
+#first
+{
+	font-size: 25px;
+	font-family: "arial", sans-serif;
+	display: inline;
+}
+
+#site
+{
+	position: fixed;
+	border: 2px solid black;
+	top: 200px;
+	left: 800px;
+	padding: 10px;
+}
+
+#image
+{
+	display: inline;
+	float: left;
+}
+
+#schedule
+{
+	position: relative;
+	
+}
+
+tbody, th, tr, td
+{
+	border: 1px solid black;
+}

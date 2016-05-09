@@ -1,0 +1,68 @@
+<!DOCTYPE>	
+<html>
+	<head>
+	<meta charset="utf-8">
+		<script type="text/javascript" src="./mid_2.js">
+			</script>
+		<title> 2015 웹 프로그래밍 중간고사 Part2 : 2번 문제</title>
+	</head>
+	<body>
+		<h1> 충남대학교 컴퓨터공학과 성적 처리</h1><br>
+		
+			<p> 학번을 입력해주세요. 학번은 20으로 시작되는 9자리의 숫자입니다. </p>
+			학번 :
+			<input type="text" id="checkId" onKeypress="javascript:if(event.keyCode==13||event.keyCode==9) {checkSid();}">
+			<p> 2개 과목의 점수, 출석, 과목에 주어지는 학점을 모두 입력해주세요.<br>
+			점수는 A, B, C, D, F 중에 하나의 값을 입력할 수 있습니다. </p>
+			
+			<table>
+				<tr>
+					<td>과목</td>
+					<td>점수</td>
+					<td>출석</td>
+					<td>학점</td>
+				</tr>
+				<tr>
+					<td>웹 프로그래밍</td>
+					<td><select id="webScore">
+						<option value="">Please Select</option>	
+						<option value="A">A</option>
+						<option value="B">B</option>
+						<option value="C">C</option>
+						<option value="D">D</option>
+						<option value="F">F</option>
+						</select>
+					</td>
+					<td>
+					<input type="text" id="webPresent">
+					</td>
+					<td>
+					<input type="text" id="webTime" onKeypress="javascript:if(event.keyCode==13||event.keyCode==9) {checkValue();}">
+					</td>
+				</tr>
+				<tr>
+					<td>운영체제</td>
+					<td><select id="osScore">
+						<option value="">Please Select</option>					
+						<option value="A">A</option>
+						<option value="B">B</option>
+						<option value="C">C</option>
+						<option value="D">D</option>
+						<option value="F">F</option>
+						</select>
+					</td>
+					<td>
+					<input type="text" id="osPresent">
+					</td>
+					<td>
+					<input type="text" id="osTime" onKeypress="javascript:if(event.keyCode==13||event.keyCode==9) {checkValue();}">
+					</td>
+				</tr>
+			</table>		
+			
+			<br>
+				총 평균은 *** 입니다. <br><br>
+			</form>
+			<button onclick="computer_score()">성적 처리하기</button>
+		<body>
+</html>

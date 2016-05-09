@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<!-- 모든 주석과 소스 코드는 영어로 작성했습니다. -->
+
+<html>
+
+
+
+<head>
+	<meta charset="UTF-8">
+	<!--External StyleSheet & JavaScript -->
+<link type="text/css" rel="stylesheet" href="./main.css"/>
+<script type="text/javascript" src="./main.js"></script>
+	<!-- HomePage Title -->
+	<title>
+		Book order page
+	</title>
+</head>
+
+<body>
+	<!-- Background Music -->
+	<embed src="./lucky.mp3" hidden="true">
+	
+	<div id="bookCart">
+		<table id="bookList">
+			<thead>
+				<tr>
+					<td></td>
+					<td>Title</td>
+					<td>Price(won)</td>
+					<td>Quantity</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<input type="checkbox" id="WP">
+					</td>
+					<td>Web Programming</td>
+					<td id="WPPrice">5000</td>
+					<td>
+						<input type="text" id="WPCount" size="3">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" id="OS">
+					</td>
+					<td>Operating System</td>
+					<td id="OSPrice">4000</td>
+					<td>
+						<input type="text" id="OSCount" size="3">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" id="DC">
+					</td>
+					<td>Data Communication</td>
+					<td id="DCPrice">4000</td>
+					<td>
+						<input type="text" id="DCCount" size="3">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" id="OOD">
+					</td>
+					<td>Object Oriented Design</td>
+					<td id="OODPrice">4500</td>
+					<td>
+						<input type="text" id="OODCount" size="3">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" id="CP">
+					</td>
+					<td>Computer Programming</td>
+					<td id="CPPrice">3500</td>
+					<td>
+						<input type="text" id="CPCount" size="3">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+			
+		<br>
+		<table id="price">
+			<tr>
+				<td>Item Price</td>
+				<td id = "itemTotal"></td>
+			</tr>
+			<tr>
+				<td>+ Delivery</td>
+				<td id = "deliveryPrice"></td>
+			<tr>
+				<td>Total Price =</td>
+				<td id = "allTotal"></td>
+			<tr>
+			</tr>
+		</table>
+	</div>
+	
+	<div id="destination">
+		<table id="inputInfo">
+			<tr>
+				<td>Name</td>
+				<td>
+					<input type="text" id="name">
+				</td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td>
+					<input type="text" id="address">
+				</td>
+			</tr>
+			<tr>
+				<td>Card Company</td>
+				<td>
+					<select name="card" id="card">
+						<option value="">Please Select</option>					
+						<option value="Lotte">Lotte</option>
+						<option value="Samsung">Samsung</option>
+						<option value="Shinhan">Shinhan</option>
+						<option value="BC">BC</option>
+						<option value="Etc">Etc</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Card Number</td>
+				<td>
+					<input type="text" id="cardNumber" placeholder="0000-0000-0000-0000"name="cardNumber">
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2">
+					<input type="submit" value="Submit" onclick="checkAll()">
+				</td>
+			</tr>
+		</table>
+	</div>	
+
+</body>
+</html>

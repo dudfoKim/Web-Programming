@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Html5 Calendar</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+	<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+	<div id="header">
+		<h1>Calendar</h1>
+	</div>
+
+	<div id="container">
+		<div id="date-cur"></div>
+		<ol id="days">
+			<li>Mon</li><li>Tue</li><li>Wed</li><li>Thu</li><li>Fri</li><li>Sat</li><li>Sun</li>
+		</ol>
+		<div class="clear"></div>
+		<ol id="calendar"></ol>
+		<div class="clear"></div>
+	</div>
+
+	<a id="add-event" href="javascript:void(0)">+</a>
+
+	<div id="new-event" href="javascript:void(0)">
+		<textarea id="event-txt"></textarea>
+		<div id="event-bar">
+			<button id="delete-event">Delete</button>
+			<button id="create-event">Create event</button> |
+			<a id="cancel-event" href="javascript:void(0)">Cancel</a>
+		</div>
+	</div>
+</body>
+</html>

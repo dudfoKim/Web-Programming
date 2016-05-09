@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="StyleSheet" type="text/css" href="StyleSheet.css">
+	<meta charset="UTF-8">
+	<title>Choyi's BookStore</title>
+</head>
+
+<body>
+	<h1>Thank you<img src = "http://hi10sion.com/addons/addon_insert_sticker/stickers/2202001.emot_062.png"></h1>
+	<form name = "myform" onsubmit="return formcheck(this)">
+	<div id = "cart">
+		<table id = "booklist">
+			<tr>
+				<th><input type="checkbox" onclick="checkall(this.form)" id="check" ></th>
+				<th>책 이름</th>
+				<th>가격</th>
+				<th>수량</th>
+			</tr>
+			<tr>
+				<td><input type="checkbox" onclick="choose(this.form)" name ="book" value= "5000"></td>
+				<td>웹프로그래밍</td>
+				<td>5000원</td>
+				<td> <input type="number" onchange="bookprice(this.form)" name ="quantity" value = "1" min="1" max="5" ></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" onclick = "choose(this.form)"  name="book" value="8000"></td>
+				<td>운영체제</td>
+				<td>8000원</td>
+				<td><input type="number" onchange = "bookprice(this.form)" name="quantity" value = "1" min="1" max="5" ></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" onclick = "choose(this.form)" name="book" value="12000"></td>
+				<td>데이터통신</td>
+				<td>12000원</td>
+				<td><input type="number" onchange = "bookprice(this.form)"  name="quantity" value = "1" min="1" max="5"></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" onclick = "choose(this.form)" name="book" value="9000"></td>
+				<td>전자전기회로</td>
+				<td>9000원</td>
+				<td><input type="number" onchange = "bookprice(this.form)" name="quantity" value = "1" min="1" max="5"></td>
+			</tr>
+		</table>
+		<p>총 구매금액 : </p>
+		<p>상품 구매금액 (<span id="totalprice">0</span>원) + 배송비(<span id = "fee">0</span>원) = <span id = "sum">0</span>원</p>
+	</div>
+	<div id = "delivery">
+		<p>이름 <input type="text" id="name"> </p>
+		<p>배송지 주소 <input type="text" id="addr"></p>
+		<p>카드사 선택 <select id = "card"> 
+								<option value="">카드사 선택</option>
+								<option value="삼성">삼성카드</option>
+								<option value="롯데">롯데카드</option>
+								<option value="현대">현대카드</option>
+								<option value="신한">신한카드</option>
+						</select> </p>
+		<p>신용카드 번호 <input type="text" id="cardnumber" placeholder = "0000-0000-0000-0000"></p>
+		<input type = "submit" value = "결제하기" id="pay">
+	</div>
+	</form>
+	<script src="myScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+body{
+	width:1000px;
+	height:500px;
+}
+
+#header {
+    position: relative;
+    top: -10px;
+    background-color:#ADD6FF;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+	box-shadow: 3px 3px 3px #444;
+	height: 40px;
+}
+
+
+a:link {
+	text-decoration:none;
+	font-family:Times New Roman;
+    font-size:20px;
+	color:blue;
+}
+a:visited {
+	text-decoration:none;
+	color:violet;
+}
+a:hover {
+	text-decoration:underline;
+	color:red;
+}
+a:active {
+	text-decoration:underline;
+	color:black;
+}
+
+th {
+    font-family:Viner Hand ITC;
+    font-size:20px;
+}
+
+img {
+	height: 150px;
+	width: 150px;
+	box-shadow: rgba(0,0,0,0.2) 10px 10px;
+	margin:3px;
+}
+
+img:hover {
+	margin:0px;
+	border:3px solid red;
+}
+
+table {
+    margin-right:30px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	float:right;
+}
+
+h1 {
+    color: #FFFFFF;
+    text-align: center;
+    font-family:Viner Hand ITC;
+}
+
+form {
+    font-family: Verdana, Arial, sans-serif;
+}
+
+p {
+    font-family: Verdana, Arial, sans-serif;
+    display: inline-block;
+}
+
+input {
+    font-family: Verdana, Arial, sans-serif;
+    color: #777;
+}
+
+input:focus {
+	background-color:#E0F0FF;
+}
+
+textarea {
+	vertical-align: top;
+	width: 400px;
+	height:200px;
+	color: #777;
+}
+
+textarea {
+	vertical-align: top;
+	width: 400px;
+	height:200px;
+	color: #777;
+}
+textarea:focus {
+	background-color:#E0F0FF;
+}
+
+#wrapper {
+    border-left: 1px solid #888;
+    border-right: 1px solid #888;
+    border-bottom: 1px solid #888;
+    position: relative;
+    top: -10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    box-shadow: 3px 3px 3px #444;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 0.8em;
+}
+
+#inputs {
+	width: 200px;
+	
+}
+
+#inputs input {
+	width: 100%;
+	clear: both;
+}

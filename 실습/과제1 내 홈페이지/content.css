@@ -1,0 +1,112 @@
+p
+{
+	line-height: 40px;
+	font-size: 17px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+#topContent
+{
+	float: left;
+	padding-left: 10px;
+}
+
+#profileImage
+{
+	border: ridge 5px white;
+}
+
+#profileTitle
+{
+	text-align: center;
+}
+
+#mail
+{
+	color: black;
+	text-align: center;
+	padding-left: 30px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#mail:visited
+{
+	color: black;
+}
+
+#mail:hover
+{
+	color: black;
+}
+
+#middleContent
+{
+	position: relative;
+	left: 50px;
+	text-align: justify;
+}
+
+.middleParagraph
+{
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+#graduate
+{
+	height: 200px;
+	width: 600px;
+	text-align: center;
+	border: solid 2px black;
+	margin: auto;
+	margin-top: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.firstRow
+{
+	border-bottom: double 2px black;
+}
+
+tr:nth-child(1)
+{
+	background-color: #99C3F1;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	color: black;
+}
+
+tr:nth-child(even)
+{
+	background-color: #D9E5F4;
+	font-size: 15px;
+	letter-spacing: 2px;
+}
+
+tr:nth-child(2n+3)
+{
+	background-color: #CAD2EA;
+	font-size: 15px;
+	letter-spacing: 2px;
+}
+
+#favoriteSite
+{
+	clear: both;
+	position: relative;
+	top: 15px;
+}
+
+.frameSet
+{
+	float: left;
+}
+
+.iframeTag
+{
+	padding-left: 90px;
+	margin-top: -5px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 13x;
+	color: #466093;
+}

@@ -1,0 +1,206 @@
+body{
+
+	background-color : #22655E;
+	width : 100%;
+}
+
+#wrapper{
+	margin-top : 50px;
+	margin-left : 20px;
+	margin-right : 25px;
+	
+}
+
+#header{
+	background-color : #1E6912;
+	height : 100px;
+	padding-left : 20px;
+	padding-top : 20px;
+	color : #9CF1EC;
+	font-family:Impact;
+	border : solid 2px white;
+}
+
+
+#middleBar{
+	margin-top : 10px;
+	border : 5px;
+	border : solid 2px white;
+	height : 50px;
+	border-radius : 5px;
+	color : white;
+	text-align : center;
+	background-color: #39872D;
+}
+
+/*drop down menu*/
+#hiddenMenu{
+	position:absolute;
+	background-color:#64B058;
+	display:none;
+	width:96.5%;
+	height:35px;
+	z-index:10;
+	
+}
+
+#addition{
+	text-align:center;	
+	width:20%;
+	background-color:#484848;
+	height:35px;
+	display:inline-block;
+}
+#indexAddition{
+	text-align:center;
+	width:20%;
+	background-color:#484848;
+	height:35px;
+	display:inline-block;
+}
+
+.menuFont{
+	font-size:20px;
+	font-weight:bold;
+	margin-top:3px;
+	color:white;
+}
+/* drop down menu*/
+
+
+
+#contentWrapper{
+	margin-top : 10px;
+}
+
+#sideBar{
+	background-color : #1E6912;
+	float:left;
+	width : 20%;
+	color : white;
+	border : solid 2px white;
+	/*기본으로 두고, 컨텐츠 많아 지면 그때부터 100%로로 바꾸기 */
+	min-height : 600px;
+	height : 100%;
+	border-radius : 5px;
+	
+}
+
+#content{
+	float : right;
+	width : 78%;
+	text-align : center;
+	color : white;
+	border : solid 2px white;
+	min-height : 800px;
+	border-radius : 5px;
+	min-height : 600px;
+	height : 100%;
+}
+
+
+
+/* hiddenContent 부분 (Hidden) */
+#hiddenContent{
+	position :absolute;
+	display:none;
+	width:411px;
+	height:267px;
+	background-color:#0D4F48;
+	text-align:center;
+	margin-top: 100px;
+	margin-left:570px;
+	z-index:100;
+	color : white;
+}
+
+/*head 부분 */
+
+#hiddenHeader{
+	padding-top : 2px;
+	width:410px;
+	height:30px;
+	
+	border-top : 1px solid grey;
+	border-left : 1px solid grey;	
+	border-right : 1px solid grey;	
+}
+
+/* image와 TextArea */
+
+#hiddenSection{
+	padding-top : 2px;
+	text-align:center;
+	width:410px;
+	border-left : 1px solid grey;	
+	border-right : 1px solid grey;	
+}
+
+#hiddenImage{
+	padding-top: 10px;
+	width:410px;
+	height:30px;
+	border-left : 1px solid grey;	
+	border-right : 1px solid grey;	
+}
+
+#inputImage{
+	margin-left:10px;
+	float:left;
+}
+
+#hiddenFooter{
+	margin: auto;
+	text-align : center;
+	height:25px;
+	width:410px;
+	border-left : 1px solid grey;	
+	border-right : 1px solid grey;	
+}
+
+.hiddenButton {
+	margin:auto;
+}
+
+/* Frame(동적으로 생성해서 나오는 부분에 대한 CSS) */
+
+.contents{
+	width : 800px;
+	border : solid 1px white;
+	margin : auto;
+	margin-top : 20px;
+}
+
+.link{
+	text-decoration:none;
+	color : white;
+}
+
+.contentsImage{
+	height:300px;
+	width:380px;
+}
+
+.comments table{
+	margin:auto;
+}
+
+.commentList{
+	text-align : left;
+	padding-left : 100px;
+	background-color : black;
+}
+
+.hiddenComment{
+	padding-top : 7px;
+}
+
+.contentsButton{
+	margin-top : 25px;
+	margin-right : 20px;
+	float: right;
+}
+
+hr{
+	width:520px;
+}
